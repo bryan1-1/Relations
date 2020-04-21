@@ -12,10 +12,10 @@
         <a class="nav-link active" href="/">Users</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Albums</a>
+        <a class="nav-link" href="#">Projects</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled link</a>
+        <a class="nav-link" href="#">Tasks</a>
     </li>
 </ul>
 <body>
