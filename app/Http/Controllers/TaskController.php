@@ -28,7 +28,9 @@ class TaskController extends Controller
      */
     public function create()
     {
-        return view(tasks.createTasks);
+       
+        $projects = Project::all();
+        return view('tasks.Createtask', compact("projects"));
     }
 
     /**
@@ -39,7 +41,12 @@ class TaskController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $tasks = new Task();
+        $tasks->task_name = request('task_name');
+        $tasks->task_description = request('task_description');
+        $tasks->project_id = request('project_id');
+        $tasks->save();
+        return redirect('/tasks');
     }
 
     /**
