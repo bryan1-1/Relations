@@ -29,7 +29,8 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        $users=User::all();
+        return view('projects.createProject',compact('users'));
     }
 
     /**
@@ -40,7 +41,12 @@ class ProjectController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $projects = new Project();
+        $projects->project_name = request('project_name');
+        $projects->project_description = request('project_description');
+        $projects->user_id = request('user_id');
+        $projects->save();
+        return redirect('/projects');
     }
 
     /**
