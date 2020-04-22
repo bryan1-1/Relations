@@ -10,8 +10,13 @@
           <label for="exampleInputEmail1"> task description</label>
           <input type="text" class="form-control" id="exampleInputEmail1"  name="task_description"  >
 
+          <select name="project_id" id="project_id">
+            @foreach ($projects as $project)
+        <option value="{{$project->id}}">{{$project->project_name}}</option>
+            @endforeach
+        </select>
+
         </div>
-        
         <button type="submit" class="btn btn-primary">Submit</button>
   </form>
     
