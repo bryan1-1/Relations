@@ -12,14 +12,18 @@
         <a class="nav-link active" href="/">Users</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="/projects/create">Projects</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Tasks</a>
+        <a class="nav-link" href="tasks/create">Tasks</a>
     </li>
 </ul>
 <body>
 
-    @yield('content')
+   
+
+ @yield('content')
+
+
 </body>
 </html>

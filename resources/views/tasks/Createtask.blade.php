@@ -1,12 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.index')
+
+@section('content')
     
-</body>
-</html>
+<form action='/tasks/create' method="post">
+    @csrf
+      <div class="form-group">
+          <label for="exampleInputEmail1">task Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="task_name" >
+          <label for="exampleInputEmail1"> task description</label>
+          <input type="text" class="form-control" id="exampleInputEmail1"  name="task_description"  >
+
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+    

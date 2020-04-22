@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use App\User;
+use App\Task;
 use Illuminate\Http\Request;
 
 class ProjectController extends Controller
@@ -17,7 +18,8 @@ class ProjectController extends Controller
     {
         $projects = Project::all();
         $users = User::all();
-        return view('welcome',compact('projects','users'));
+        $tasks = Task::all();
+        return view('welcome',compact('projects','users', 'tasks'));
     }
 
     /**

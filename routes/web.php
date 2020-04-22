@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Project;
+use App\Task;
+use App\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('/projects');
+    $users = User::all();
+    $tasks = Task::all();
+    $projects = Project::all();
+
+    return redirect('/welcome', compact("users", "tasks", "projects"));
 });
 Route::resource('projects','ProjectController');
