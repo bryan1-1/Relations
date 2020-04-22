@@ -16,13 +16,7 @@ use App\User;
 |
 */
 
-// Route::get('/', function () {
-//     $users = User::all();
-//     $tasks = Task::all();
-//     $projects = Project::all();
 
-//     return redirect('/welcome', compact("users", "tasks", "projects"));
-// });
 Route::get('/',function(){
     return redirect('/projects');
     });

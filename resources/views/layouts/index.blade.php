@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" href="/">Users</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="/projects/create">Projects</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="tasks/create">Tasks</a>
-    </li>
-</ul>
 <body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Users</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/projects/create">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tasks/create">Tasks</a>
+        </li>
+    </ul>
 
    
 
