@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
-<body>
-    <ul class="nav justify-content-center">
+<body class="bg-dark text-white">
+    <ul class="nav justify-content-center bg-secondary ">
         <li class="nav-item">
             <a class="nav-link active" href="/">Users</a>
         </li>
