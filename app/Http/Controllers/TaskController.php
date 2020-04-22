@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Project;
+use App\User;
 use App\Task;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,10 @@ class TaskController extends Controller
      */
     public function index()
     {
-        
+        $projects = Project::all();
+        $users = User::all();
+        $tasks = Task::all();
+        return view('welcome',compact('projects','users', 'tasks'));
     }
 
     /**
@@ -24,7 +28,7 @@ class TaskController extends Controller
      */
     public function create()
     {
-        //
+        return view(tasks.createTasks);
     }
 
     /**
