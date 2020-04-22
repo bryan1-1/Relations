@@ -2,7 +2,7 @@
 
 @section('content')
     
-<form action='/tasks/create' method="post">
+<form action='/tasks' method="post" enctype="multipart/form-data">
     @csrf
       <div class="form-group">
           <label for="exampleInputEmail1">task Name</label>

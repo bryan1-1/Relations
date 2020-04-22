@@ -29,9 +29,8 @@ class ProjectController extends Controller
      */
     public function create()
     {
-       
-        return view('Project.createProject');
-        
+        $users=User::all();
+        return view('projects.createProject',compact('users'));
     }
 
     /**
