@@ -1,7 +1,7 @@
 @extends('layouts.index')
 
 @section('content')
-    
+    <h1>Create Project</h1>
 <form action='/tasks' method="post" enctype="multipart/form-data">
     @csrf
       <div class="form-group">
