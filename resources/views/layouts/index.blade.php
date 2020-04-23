@@ -16,7 +16,7 @@
             <a class="nav-link" href="/projects/create">Projects</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="tasks/create">Tasks</a>
+            <a class="nav-link" href="/tasks/create">Tasks</a>
         </li>
     </ul>
 
